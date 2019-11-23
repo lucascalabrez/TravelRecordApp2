@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TravelRecodrApp.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                 Margin="5,15,5,15">
+            <Entry x:Name="emailEntry"
+               Placeholder="Email address"
+               Keyboard="Email"
+               PlaceholderColor="{StaticResource Color2}"
+               TextColor="AliceBlue"/>
+            <Entry x:Name="passwordEntry"
+               Placeholder="Password"
+               PlaceholderColor="{StaticResource Color2}"
+               TextColor="AliceBlue"
+               IsPassword="True"/>
+            <Entry x:Name="confirmPasswordEntry"
+               Placeholder="Confirm password"
+               PlaceholderColor="{StaticResource Color2}"
+               TextColor="AliceBlue"
+               IsPassword="True"/>
+            <Button Text="Register"
+                x:Name="registerButton"
+                BackgroundColor="{StaticResource Color1}"
+                TextColor="BlueViolet"
+                Clicked="registerButton_Clicked"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

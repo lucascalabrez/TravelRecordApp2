@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TravelRecodrApp.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="blueColor">#1E90FF</Color>
+            <Color x:Key="Color1">#1A9BCF</Color>
+            <Color x:Key="Color2">#D10FEB</Color>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center"
+                 Margin="5,15,5,15">
+        <Image x:Name="iconImage"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               Margin="0, 0, 0, 50"
+               HeightRequest="150"/>
+        <Entry x:Name="emailEntry"
+               Placeholder="Email address"
+               Keyboard="Email"
+               PlaceholderColor="{StaticResource Color2}"
+               TextColor="AliceBlue"/>
+        <Entry x:Name="passwordEntry"
+               Placeholder="Password"
+               PlaceholderColor="{StaticResource Color2}"
+               TextColor="AliceBlue"
+               IsPassword="True"/>
+        <Button Text="Log in"
+                x:Name="LoginButton"
+                BackgroundColor="{StaticResource Color1}"
+                TextColor="BlueViolet"
+                Clicked="LoginButton_Clicked"/>
+        <Button x:Name="registerUserButton"
+                Text="Register"
+                HorizontalOptions="End"
+                Clicked="registerUserButton_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
